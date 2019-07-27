@@ -1,0 +1,18 @@
+CREATE TABLE log (
+  timestamp INTEGER NOT NULL,
+  description TEXT NOT NULL
+);
+
+selectLastRows:
+SELECT *
+FROM log
+ORDER BY 1 DESC
+LIMIT ?;
+
+selectAll:
+SELECT *
+FROM log;
+
+insert:
+INSERT INTO log(timestamp, description)
+VALUES (?, ?);

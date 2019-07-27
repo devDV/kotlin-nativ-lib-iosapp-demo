@@ -1,0 +1,6 @@
+framework module mplib {
+    umbrella header "mplib.h"
+
+    export *
+    module * { export * }
+}

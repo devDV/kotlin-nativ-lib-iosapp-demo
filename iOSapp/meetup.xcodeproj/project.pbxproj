@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6695A6DF22E7566100094596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6695A6DE22E7566100094596 /* AppDelegate.swift */; };
+		6695A6E122E7566100094596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6695A6E022E7566100094596 /* ViewController.swift */; };
+		6695A6E422E7566100094596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6695A6E222E7566100094596 /* Main.storyboard */; };
+		6695A6E622E7566400094596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6695A6E522E7566400094596 /* Assets.xcassets */; };
+		6695A6E922E7566400094596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6695A6E722E7566400094596 /* LaunchScreen.storyboard */; };
+		66EBEDD522EC70FA004130DB /* mplib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EBEDD422EC70FA004130DB /* mplib.framework */; };
+		66EBEDD622EC70FA004130DB /* mplib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66EBEDD422EC70FA004130DB /* mplib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66F9723122E75749005AF273 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				66EBEDD622EC70FA004130DB /* mplib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		045A234C8F27C67166DEFE86 /* api.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = api.kt; path = ../src/commonMain/kotlin/meetup/api.kt; sourceTree = "<group>"; };
+		1049307D97A5B1BEA4AFACC9 /* getDeviceResolution.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = getDeviceResolution.kt; path = ../mplib/src/iosMain/kotlin/meetup/getDeviceResolution.kt; sourceTree = "<group>"; };
+		12AA4824A15A166E2226C7E9 /* SampleIos.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SampleIos.kt; path = ../src/iosMain/kotlin/sample/SampleIos.kt; sourceTree = "<group>"; };
+		27DA47933F0D9324E4E7BF20 /* db.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = db.kt; path = ../src/commonMain/kotlin/meetup/db.kt; sourceTree = "<group>"; };
+		4B2A78FA1325075BC3C0AA3C /* SampleJvm.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SampleJvm.kt; path = ../src/jvmMain/kotlin/sample/SampleJvm.kt; sourceTree = "<group>"; };
+		5345A12D3C4FC4713D601284 /* SampleTestsNative.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SampleTestsNative.kt; path = ../src/iosTest/kotlin/sample/SampleTestsNative.kt; sourceTree = "<group>"; };
+		5F777878A568D3EEBD8461EC /* ApplicationDispatcher.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ApplicationDispatcher.kt; path = ../src/iosMain/kotlin/meetup/ApplicationDispatcher.kt; sourceTree = "<group>"; };
+		6695A6DB22E7566100094596 /* meetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6695A6DE22E7566100094596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6695A6E022E7566100094596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6695A6E322E7566100094596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6695A6E522E7566400094596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6695A6E822E7566400094596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6695A6EA22E7566400094596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66EBEDD422EC70FA004130DB /* mplib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mplib.framework; sourceTree = "<group>"; };
+		727E7B57966FFB548FF288C1 /* createSysSqlDriver.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = createSysSqlDriver.kt; path = ../src/iosMain/kotlin/meetup/createSysSqlDriver.kt; sourceTree = "<group>"; };
+		982A7FA3F0A4B5FA1FE8BFA9 /* ApplicationDispatcher.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ApplicationDispatcher.kt; path = ../mplib/src/iosMain/kotlin/meetup/ApplicationDispatcher.kt; sourceTree = "<group>"; };
+		993592A990DBA4D9C4BD0A4D /* api.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = api.kt; path = ../mplib/src/commonMain/kotlin/meetup/api.kt; sourceTree = "<group>"; };
+		A24D4495CDF4758B3171DB4A /* SampleIos.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SampleIos.kt; path = ../mplib/src/iosMain/kotlin/sample/SampleIos.kt; sourceTree = "<group>"; };
+		A55F7AD0B8A0A500FE30CB18 /* Sample.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Sample.kt; path = ../mplib/src/commonMain/kotlin/sample/Sample.kt; sourceTree = "<group>"; };
+		BCC9DB66D91D45425C3580F0 /* SampleTestsJVM.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SampleTestsJVM.kt; path = ../src/jvmTest/kotlin/sample/SampleTestsJVM.kt; sourceTree = "<group>"; };
+		C517D7E9D4755ECF5D0FEA36 /* SampleTestsJVM.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SampleTestsJVM.kt; path = ../mplib/src/jvmTest/kotlin/sample/SampleTestsJVM.kt; sourceTree = "<group>"; };
+		CB06C6B64F195F47F485604C /* SampleTests.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SampleTests.kt; path = ../src/commonTest/kotlin/sample/SampleTests.kt; sourceTree = "<group>"; };
+		D7CC7537DFD1763EADFC0AC3 /* SampleJvm.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SampleJvm.kt; path = ../mplib/src/jvmMain/kotlin/sample/SampleJvm.kt; sourceTree = "<group>"; };
+		D847D45F0D0FAA60E793C777 /* device.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = device.kt; path = ../mplib/src/commonMain/kotlin/meetup/device.kt; sourceTree = "<group>"; };
+		D9A8343E8564AFAA156921E1 /* SampleTestsNative.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SampleTestsNative.kt; path = ../mplib/src/iosTest/kotlin/sample/SampleTestsNative.kt; sourceTree = "<group>"; };
+		DE1AFC4B2C9DAFE2DF959B5C /* getDeviceResolution.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = getDeviceResolution.kt; path = ../src/iosMain/kotlin/meetup/getDeviceResolution.kt; sourceTree = "<group>"; };
+		E33BC4916189A760D9EAEE91 /* SampleTests.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SampleTests.kt; path = ../mplib/src/commonTest/kotlin/sample/SampleTests.kt; sourceTree = "<group>"; };
+		F2854EB41B4C29D97585F34F /* db.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = db.kt; path = ../mplib/src/commonMain/kotlin/meetup/db.kt; sourceTree = "<group>"; };
+		F7519DA7EC3B7C8AEBF81C91 /* createSysSqlDriver.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = createSysSqlDriver.kt; path = ../mplib/src/iosMain/kotlin/meetup/createSysSqlDriver.kt; sourceTree = "<group>"; };
+		FB707942D39C13103A6AF2CB /* device.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = device.kt; path = ../src/commonMain/kotlin/meetup/device.kt; sourceTree = "<group>"; };
+		FE365D64A46787F85B756F9A /* Sample.kt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Sample.kt; path = ../src/commonMain/kotlin/sample/Sample.kt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6695A6D822E7566100094596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EBEDD522EC70FA004130DB /* mplib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		266B08E790B252328FAFD2B9 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		29829E5306BDD7BB33D736AF /* jvmTest */ = {
+			isa = PBXGroup;
+			children = (
+				6DCCA0CF1CB0156E889478DC /* kotlin */,
+				E1738426D3698FFAD744D40C /* resources */,
+			);
+			name = jvmTest;
+			sourceTree = "<group>";
+		};
+		2FE20F0A79F3001C35658E56 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				A55F7AD0B8A0A500FE30CB18 /* Sample.kt */,
+				FE365D64A46787F85B756F9A /* Sample.kt */,
+			);
+			name = sample;
+			sourceTree = "<group>";
+		};
+		37D3B72360E8F2D5C3EC9DE1 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				E33BC4916189A760D9EAEE91 /* SampleTests.kt */,
+				CB06C6B64F195F47F485604C /* SampleTests.kt */,
+			);
+			name = sample;
+			sourceTree = "<group>";
+		};
+		39FB10984B4DBCB3FB2BAB25 /* sqldelight */ = {
+			isa = PBXGroup;
+			children = (
+				BBE68F7720998C586D3DEDAF /* db */,
+			);
+			name = sqldelight;
+			sourceTree = "<group>";
+		};
+		3BE748B7D79289B596309389 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				D7CC7537DFD1763EADFC0AC3 /* SampleJvm.kt */,
+				4B2A78FA1325075BC3C0AA3C /* SampleJvm.kt */,
+			);
+			name = sample;
+			sourceTree = "<group>";
+		};
+		3F03CC70C1DCCF3451F53C5B /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				70A2C1D8317170A83F2A1D56 /* sample */,
+			);
+			name = kotlin;
+			sourceTree = "<group>";
+		};
+		412654C79A5F133F03EDA77D /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				A12A83365F618738ED1349B4 /* meetup */,
+				2FE20F0A79F3001C35658E56 /* sample */,
+			);
+			name = kotlin;
+			sourceTree = "<group>";
+		};
+		42651A910E4B3C51DAB5A2C1 /* Kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				EE35F13502FC3E4540420C3B /* commonMain */,
+				CDF76FF865A9C685A6609669 /* commonTest */,
+				D408FC9D092ECB06ECBFB2A6 /* iosMain */,
+				93006F6948D44D48BA2DDC5D /* iosTest */,
+				F19EE54AC431848B045478C3 /* jvmMain */,
+				29829E5306BDD7BB33D736AF /* jvmTest */,
+			);
+			name = Kotlin;
+			sourceTree = "<group>";
+		};
+		4D672023369902B533B4A26A /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				A24D4495CDF4758B3171DB4A /* SampleIos.kt */,
+				12AA4824A15A166E2226C7E9 /* SampleIos.kt */,
+			);
+			name = sample;
+			sourceTree = "<group>";
+		};
+		6695A6D222E7566100094596 = {
+			isa = PBXGroup;
+			children = (
+				66EBEDD422EC70FA004130DB /* mplib.framework */,
+				6695A6DD22E7566100094596 /* meetup */,
+				6695A6DC22E7566100094596 /* Products */,
+				42651A910E4B3C51DAB5A2C1 /* Kotlin */,
+			);
+			sourceTree = "<group>";
+		};
+		6695A6DC22E7566100094596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6695A6DB22E7566100094596 /* meetup.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6695A6DD22E7566100094596 /* meetup */ = {
+			isa = PBXGroup;
+			children = (
+				6695A6DE22E7566100094596 /* AppDelegate.swift */,
+				6695A6E022E7566100094596 /* ViewController.swift */,
+				6695A6E222E7566100094596 /* Main.storyboard */,
+				6695A6E522E7566400094596 /* Assets.xcassets */,
+				6695A6E722E7566400094596 /* LaunchScreen.storyboard */,
+				6695A6EA22E7566400094596 /* Info.plist */,
+			);
+			path = meetup;
+			sourceTree = "<group>";
+		};
+		6DCCA0CF1CB0156E889478DC /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				F24E19A81D6A5C5A68C9B3BA /* sample */,
+			);
+			name = kotlin;
+			sourceTree = "<group>";
+		};
+		70A2C1D8317170A83F2A1D56 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				D9A8343E8564AFAA156921E1 /* SampleTestsNative.kt */,
+				5345A12D3C4FC4713D601284 /* SampleTestsNative.kt */,
+			);
+			name = sample;
+			sourceTree = "<group>";
+		};
+		7A50E647C120A279873EF65D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		80B437A7FA2AD817F967888D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		93006F6948D44D48BA2DDC5D /* iosTest */ = {
+			isa = PBXGroup;
+			children = (
+				3F03CC70C1DCCF3451F53C5B /* kotlin */,
+				7A50E647C120A279873EF65D /* resources */,
+			);
+			name = iosTest;
+			sourceTree = "<group>";
+		};
+		94E7AAD860EFDF6D0DB70529 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				37D3B72360E8F2D5C3EC9DE1 /* sample */,
+			);
+			name = kotlin;
+			sourceTree = "<group>";
+		};
+		9D2193B3ECD2AD65E12DAE65 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		A12A83365F618738ED1349B4 /* meetup */ = {
+			isa = PBXGroup;
+			children = (
+				993592A990DBA4D9C4BD0A4D /* api.kt */,
+				F2854EB41B4C29D97585F34F /* db.kt */,
+				D847D45F0D0FAA60E793C777 /* device.kt */,
+				045A234C8F27C67166DEFE86 /* api.kt */,
+				27DA47933F0D9324E4E7BF20 /* db.kt */,
+				FB707942D39C13103A6AF2CB /* device.kt */,
+			);
+			name = meetup;
+			sourceTree = "<group>";
+		};
+		A70D997FCEA7B89E32C00116 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				3BE748B7D79289B596309389 /* sample */,
+			);
+			name = kotlin;
+			sourceTree = "<group>";
+		};
+		BBE68F7720998C586D3DEDAF /* db */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+		CDF76FF865A9C685A6609669 /* commonTest */ = {
+			isa = PBXGroup;
+			children = (
+				94E7AAD860EFDF6D0DB70529 /* kotlin */,
+				FF9D497E18C20F0BAFFCAA49 /* resources */,
+			);
+			name = commonTest;
+			sourceTree = "<group>";
+		};
+		D408FC9D092ECB06ECBFB2A6 /* iosMain */ = {
+			isa = PBXGroup;
+			children = (
+				D68A54B8AA4FDC50BF540EA4 /* kotlin */,
+				266B08E790B252328FAFD2B9 /* resources */,
+			);
+			name = iosMain;
+			sourceTree = "<group>";
+		};
+		D68A54B8AA4FDC50BF540EA4 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				F9D584D0DB25CA0825DDC128 /* meetup */,
+				4D672023369902B533B4A26A /* sample */,
+			);
+			name = kotlin;
+			sourceTree = "<group>";
+		};
+		E1738426D3698FFAD744D40C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		EE35F13502FC3E4540420C3B /* commonMain */ = {
+			isa = PBXGroup;
+			children = (
+				412654C79A5F133F03EDA77D /* kotlin */,
+				80B437A7FA2AD817F967888D /* resources */,
+				39FB10984B4DBCB3FB2BAB25 /* sqldelight */,
+			);
+			name = commonMain;
+			sourceTree = "<group>";
+		};
+		F19EE54AC431848B045478C3 /* jvmMain */ = {
+			isa = PBXGroup;
+			children = (
+				A70D997FCEA7B89E32C00116 /* kotlin */,
+				9D2193B3ECD2AD65E12DAE65 /* resources */,
+			);
+			name = jvmMain;
+			sourceTree = "<group>";
+		};
+		F24E19A81D6A5C5A68C9B3BA /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				C517D7E9D4755ECF5D0FEA36 /* SampleTestsJVM.kt */,
+				BCC9DB66D91D45425C3580F0 /* SampleTestsJVM.kt */,
+			);
+			name = sample;
+			sourceTree = "<group>";
+		};
+		F9D584D0DB25CA0825DDC128 /* meetup */ = {
+			isa = PBXGroup;
+			children = (
+				982A7FA3F0A4B5FA1FE8BFA9 /* ApplicationDispatcher.kt */,
+				F7519DA7EC3B7C8AEBF81C91 /* createSysSqlDriver.kt */,
+				1049307D97A5B1BEA4AFACC9 /* getDeviceResolution.kt */,
+				5F777878A568D3EEBD8461EC /* ApplicationDispatcher.kt */,
+				727E7B57966FFB548FF288C1 /* createSysSqlDriver.kt */,
+				DE1AFC4B2C9DAFE2DF959B5C /* getDeviceResolution.kt */,
+			);
+			name = meetup;
+			sourceTree = "<group>";
+		};
+		FF9D497E18C20F0BAFFCAA49 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6695A6DA22E7566100094596 /* meetup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6695A6ED22E7566400094596 /* Build configuration list for PBXNativeTarget "meetup" */;
+			buildPhases = (
+				6695A6D722E7566100094596 /* Sources */,
+				6695A6D822E7566100094596 /* Frameworks */,
+				6695A6D922E7566100094596 /* Resources */,
+				66F9723122E75749005AF273 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = meetup;
+			productName = meetup;
+			productReference = 6695A6DB22E7566100094596 /* meetup.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6695A6D322E7566100094596 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = dattk;
+				TargetAttributes = {
+					6695A6DA22E7566100094596 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 6695A6D622E7566100094596 /* Build configuration list for PBXProject "meetup" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6695A6D222E7566100094596;
+			productRefGroup = 6695A6DC22E7566100094596 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6695A6DA22E7566100094596 /* meetup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6695A6D922E7566100094596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6695A6E922E7566400094596 /* LaunchScreen.storyboard in Resources */,
+				6695A6E622E7566400094596 /* Assets.xcassets in Resources */,
+				6695A6E422E7566100094596 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6695A6D722E7566100094596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6695A6E122E7566100094596 /* ViewController.swift in Sources */,
+				6695A6DF22E7566100094596 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6695A6E222E7566100094596 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6695A6E322E7566100094596 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6695A6E722E7566400094596 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6695A6E822E7566400094596 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6695A6EB22E7566400094596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6695A6EC22E7566400094596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6695A6EE22E7566400094596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHXHKV6ZD8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = meetup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.meetup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6695A6EF22E7566400094596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHXHKV6ZD8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = meetup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.meetup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6695A6D622E7566100094596 /* Build configuration list for PBXProject "meetup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6695A6EB22E7566400094596 /* Debug */,
+				6695A6EC22E7566400094596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6695A6ED22E7566400094596 /* Build configuration list for PBXNativeTarget "meetup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6695A6EE22E7566400094596 /* Debug */,
+				6695A6EF22E7566400094596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6695A6D322E7566100094596 /* Project object */;
+}
